@@ -1,0 +1,427 @@
+@import null
+
+@font-face
+	font-family: 'LatoBlack'
+	src: url('../fonts/LatoBlack/Lato-Black.eot')
+	src: local('☺'), url('../fonts/LatoBlack/Lato-Black.woff') format('woff'), url('../fonts/LatoBlack/Lato-Black.ttf') format('truetype'), url('../fonts/LatoBlack/Lato-Black.svg') format('svg')
+	font-weight: normal
+	font-style: normal
+
+@font-face
+	font-family: 'LatoBold'
+	src: url('../fonts/LatoBold/Lato-Bold.eot')
+	src: local('☺'), url('../fonts/LatoBold/Lato-Bold.woff') format('woff'), url('../fonts/LatoBold/Lato-Bold.ttf') format('truetype'), url('../fonts/LatoBold/Lato-Bold.svg') format('svg')
+	font-weight: normal
+	font-style: normal
+
+@font-face 
+	font-family: 'LatoLight'
+	src: url('../fonts/LatoLight/Lato-Light.eot')
+	src: local('☺'), url('../fonts/LatoLight/Lato-Light.woff') format('woff'), url('../fonts/LatoLight/Lato-Light.ttf') format('truetype'), url('../fonts/LatoLight/Lato-Light.svg') format('svg')
+	font-weight: normal
+	font-style: normal
+
+@font-face
+	font-family: 'LatoRegular'
+	src: url('../fonts/LatoRegular/Lato-Regular.eot')
+	src: local('☺'), url('../fonts/LatoRegular/Lato-Regular.woff') format('woff'), url('../fonts/LatoRegular/Lato-Regular.ttf') format('truetype'), url('../fonts/LatoRegular/Lato-Regular.svg') format('svg')
+	font-weight: normal
+	font-style: normal
+
+@font-face
+	font-family: 'MyriadProRegular'
+	src: url('../fonts/MyriadProRegular/SQDRSS+MyriadPro-Regular.eot')
+	src: local('☺'), url('../fonts/MyriadProRegular/SQDRSS+MyriadPro-Regular.woff') format('woff'), url('../fonts/MyriadProRegular/SQDRSS+MyriadPro-Regular.ttf') format('truetype'), url('../fonts/MyriadProRegular/SQDRSS+MyriadPro-Regular.svg') format('svg')
+	font-weight: normal
+	font-style: normal
+
+.tac
+	text-align: center
+
+.ffll
+	font-family: 'LatoLight'
+
+.m0a
+	margin: 0 auto
+
+.df
+	display: flex
+
+.jcc
+	justify-content: center
+
+body
+	font-family: 'LatoRegular'
+
+.home
+	background: url(../img/home/02.jpg) 50% no-repeat
+	background-size: cover
+	color: #fff
+
+	&__logo
+		padding-top: 165px
+		margin-bottom: 150px
+
+		@media screen and (max-width: 799px)
+			padding-top: 65px
+			margin-bottom: 50px
+
+	&__title
+		h1
+			font-family: 'LatoBlack'
+			font-size: 34px
+			letter-spacing: 5.43px
+			line-height: 40px
+			max-width: 900px
+			margin: 0 auto
+
+			@media screen and (max-width: 799px)
+				max-width: 500px
+
+			@media screen and (max-width: 499px)
+				font-size: 20px
+				max-width: 400px
+
+			@media screen and (max-width: 420px)
+				max-width: 300px
+
+	&__subtitle
+		font-size: 26px
+		line-height: 40px
+		letter-spacing: 4.15px
+		margin-bottom: 278px
+
+		@media screen and (max-width: 499px)
+			font-size: 15px
+
+		&:after
+			content: ''
+			position: absolute
+			left: calc(50% - 52.5px)
+			margin-top: 50px
+			background-color: #fff
+			width: 105px
+			height: 2px
+
+		@media screen and (max-width: 849px)
+			max-width: 700px
+			margin: 0 auto
+
+		@media screen and (max-width: 799px)
+			margin-bottom: 50px
+
+			&:after
+				content: none
+
+		@media screen and (max-width: 699px)
+			max-width: 600px
+
+		@media screen and (max-width: 620px)
+			max-width: 500px
+
+		@media screen and (max-width: 499px)
+			display: none
+
+	&__more
+		margin-top: 75px
+		padding-bottom: 153px
+
+		@media screen and (max-width: 799px)
+			margin-top: 50px
+			padding-bottom: 53px
+
+.btn
+	border: 2px solid #fff
+	display: inline-block
+	&:hover
+		background-color: #fff
+	@media screen and (max-width: 849px)
+		margin-top: 250px
+	@media screen and (max-width: 799px)
+		margin-top: 20px
+	@media screen and (max-width: 499px)
+		margin-top: 100px
+	a
+		color: #fff
+		font-size: 16px
+		&:hover
+			color: #517a92
+		p
+			padding: 18px 42px
+		
+.menu
+	padding-top: 23px
+	justify-content: space-around
+	max-width: 500px
+
+	&__link
+		font-size: 15px
+		color: #3c3c3c
+
+		&:hover
+			color: #ada074
+
+		&_active
+			color: #ada074
+			font-family: 'LatoBold'
+
+.heading
+	font-family: 'LatoBold'
+	font-size: 34px
+	letter-spacing: 8.95px
+
+	&:after
+		content: ''
+		position: absolute
+		left: calc(50% - 40.5px)
+		margin-top: 35px
+		background-color: #000
+		width: 81px
+		height: 1px
+
+	@media screen and (max-width: 375px)
+		max-width: 300px
+		margin: 0 auto
+
+.about
+	padding-top: 130px
+	max-width: 900px
+
+	@media screen and (max-width: 929px)
+		max-width: 500px
+		padding-top: 70px
+
+	&__subtitle
+		margin-top: 70px
+		color: #868585
+		line-height: 25.89px
+
+		@media screen and (max-width: 529px)
+			max-width: 300px
+			margin: 0 auto
+			margin-top: 75px
+
+	&__bottom
+		margin-top: 30px
+		padding-bottom: 95px
+
+		@media screen and (max-width: 929px)
+			flex-direction: column
+			padding-bottom: 50px
+
+	&__column
+		flex: 0 0 33.3333333%
+
+	&__image
+		margin-top: 30px
+
+	&__title
+		margin: 41px 0 36px 0
+		font-size: 22px
+		letter-spacing: 3.52px
+
+		@media screen and (max-width: 929px)
+			margin: 20px 0 15px 0
+
+	&__text
+		color: #868585
+		font-family: 'LatoLight'
+		line-height: 26px
+		max-width: 260px
+		margin: 0 auto
+
+.portfolio
+	background-color: #f3f3f3
+
+	&__heading
+		padding-top: 107px
+		margin-bottom: 91px
+
+		@media screen and (max-width: 399px)
+			font-size: 27px
+
+	&__menu
+		justify-content: space-around
+		max-width: 500px
+
+	&__gallery
+		margin-top: 136px
+		margin-bottom: 64px
+
+	&__column
+		@media screen and (max-width: 1160px)
+			&:last-child
+				display: none
+
+	&__item
+		margin: 13px 8px
+
+		img
+			width: 100%
+
+	&__btn
+		border-color: #000
+		margin-bottom: 62px
+		@media screen and (max-width: 929px)
+			margin-top: 0px
+			margin-bottom: 30px
+		&:hover
+			background-color: #000
+		a
+			color: #000
+			&:hover
+				color: #fff
+
+.partners
+	background: url(../img/partners/05.jpg) 50% no-repeat
+	background-size: cover
+
+	&__heading
+		padding-top: 100px
+		margin-bottom: 93px
+		color: #fff
+		font-size: 30px
+		letter-spacing: 1.8px
+
+		@media screen and (max-width: 649px)
+			padding-top: 30px
+			margin-bottom: 30px
+
+	&__flex
+		align-items: flex-start
+
+		@media screen and (max-width: 649px)
+			flex-direction: column
+			align-items: center
+
+	img
+		margin-right: 109px
+		padding-bottom: 100px
+		justify-content: space-around
+
+		@media screen and (max-width: 649px)
+			margin-right: 0
+			padding-bottom: 20px
+
+		&:last-child
+			margin-right: 0
+
+.contact
+	&__heading
+		padding-top: 180px
+		margin-bottom: 166px
+
+		@media screen and (max-width: 850px)
+			padding-top: 50px
+			margin-bottom: 66px
+
+	&__flexbox
+		@media screen and (max-width: 850px)
+			flex-direction: column
+			align-items: center
+
+	&__form
+		input
+			background-color: #f8f7f7
+			border-top: 1px solid #000
+			width: 161px
+			height: 35px
+			font-family: 'LatoLight'
+			display: flex
+			margin: 13px 60px 75px 0
+
+			&:focus
+				border-bottom: 1px solid #000
+
+			@media screen and (max-width: 850px)
+				width: 383px
+				margin: 13px 0 25px 0
+
+			@media screen and (max-width: 429px)
+				width: 300px
+
+
+	textarea
+		border-top: 1px solid #000
+		width: 383px
+		font-family: 'LatoLight'
+		height: 118px
+		background-color: #f8f7f7
+		margin-top: 13px
+		resize: none
+
+		&:focus
+			border-bottom: 1px solid #000
+
+		@media screen and (max-width: 429px)
+			width: 300px
+
+	button
+		display: block
+		background-color: #fff
+		letter-spacing: 0.84px
+		font-family: 'LatoBold'
+		margin-top: 42px
+		margin: 0 0 102px 343px
+
+		&:hover
+			opacity: 0.5
+
+		@media screen and (max-width: 739px)
+			margin-top: 15px
+
+		@media screen and (max-width: 429px)
+			margin-left: 260px
+
+	&__right
+		margin-left: 13px
+		max-width: 300px
+
+		@media screen and (max-width: 850px)
+			margin-top: -50px
+			margin-bottom: 50px
+
+	&__text
+		line-height: 26px
+
+	&__author
+		margin: 36px 0 23px 0
+		font-family: 'LatoBold'
+
+	&__social
+		img
+			margin: 0 12px 13px 0
+
+	&__mail
+		span
+			font-family: 'LatoBold'
+
+	&__inputs
+		@media screen and (max-width: 850px)
+			display: block
+
+.footer
+	background-color: #3c3c3c
+
+	&__logo
+		padding-top: 48px
+		margin-bottom: 41px
+
+	&__menu
+		a
+			color: #a4a4a4
+			margin-right: 20px
+
+			&:last-child
+				margin-right: 0
+				
+	&__copyright
+		margin-top: 34px
+		padding-bottom: 49px
+		font-family: "MyriadProRegular"
+		color: #6c6c6c
+
+
+
+
+
